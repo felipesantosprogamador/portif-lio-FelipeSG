@@ -4,7 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=S, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+       crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <link rel="stylesheet" href="styles.css">
     <title>Portfólio - Felipe Gv</title>
@@ -12,7 +19,7 @@
 
 <body>
 
-
+<!--header-->
   <section id="header">
     <a class="header-title" href="/">
       <h1>
@@ -20,7 +27,10 @@
       </h1>
     </a>
     <nav class="navbar">
-      <ul>
+
+      <button class="menu-hamburquer"></button>
+      
+      <ul class="navbar-links">
         <li><a href="#person">Home</a></li>
         <li><a href="#about">sobre</a></li>
         <li><a href="#projects">Projetos</a></li>
@@ -30,8 +40,9 @@
     </nav>
 
   </section>
+<!--end header-->
 
-  
+<!--person-->  
     <section id="person">
       <div class="person-content">
        <div class="person-name">
@@ -41,33 +52,35 @@
           <h1>Felipe S. Gonçalves <span></span></h1>  
       </div>
       <div class="stacks-content">
+
         <h3>Techs :</h3>
-        <div class="stacks">
-          <ul>
+
+      
+
+        
+          <ul class="stacks">
             <li>
-              <div data="CSS">
-                <img src="svg/css.svg" alt="css-icon">
+              <div data="HTML">
+                <img src="./svg/html.svg" alt="html">
               </div>
               
             </li>
-          </ul>
-          <ul>
+
             <li>
-              <div data="HTML">
-                <img src="svg/html.svg" alt="html-icon">
+              <div data="CSS">
+                <img src="./svg/css.svg" alt="css-icon">
               </div>
             </li>
-          </ul>
-          <ul>
+
             <li>
               <div data="JS">
-                <img src="svg/js.svg" alt="js-icon">
+                <img src="./svg/js.svg" alt="js-icon">
               </div>
             </li>
           </ul>
           
 
-        </div>
+        
           
         </div>
 
@@ -75,8 +88,7 @@
 
       <div class="person-blackground"> 
         <div class="wrapper-profile-photo">
-        <img class="profile-photo" src="./imag/Imagem do WhatsApp de 2023-07-25 à(s) 10.58.07.jpg" alt="foto-felipe" 
-        width="200px">
+        <img class="profile-photo" src="./imag/Imagem do WhatsApp de 2023-07-25 à(s) 10.58.07.jpg" alt="foto-felipe" >
 
 
       </div>
@@ -106,8 +118,9 @@
     
 
     </section>
+    <!--end person-->
 
-
+<!--about-->
     <section id="about">
       <div class="background-about">
         <div class="img-wrapper">
@@ -125,7 +138,7 @@
 
         </div>
         <h3>Sou Desenvolvedor Front End com pouca experiência em
-          <p>HTML, CSS, JavaScrip</p> 
+          <p>HTML, CSS, JavaScript</p> 
         </h3>
         <h4>Me chamo Felipe S. Gonçalves, tenho 38.Estou em busca de uma oportunidade na de T.I estou fazendo uma transiçao de careira - tabem estou iniciando como Freelancer- Estou aberto a oportunidade com Dev Jr.
 
@@ -142,45 +155,60 @@
       </div>
 
     </section>
+    <!--end about-->
 
-    
-
+<!--projects-->
     <section id="projects">
       <div class="projects-title">
         <h2>PROJETOS 🧩</h2>
+       </div>
 
-        </div>
-        <div class="wrapper-projects">
-          <div class="card-projects">
-            <div class="content-projects">
-              <div class="image-projects">
-                <img src="./imag/2580550_4ccf.jpg" alt="img-frontend">
+       <div class="swiper mySwipe">
+        <!--wrapper-projects-->
+        
+        <div class="swiper-wrappert">
 
-              </div>
-              <span>Meu primeiro projeto</span>
-
-              <p>Esse site simula compra de carros</p>
-
-              <div class="cta-projects">
-                <a href="/">
-                  codigo
-                  <i class="fa-brands fa-github"></i>
-                </a>
-                <a href="/">
-                  Site
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                </a>
-
-              </div>
-
+            <!--content-project-->
+          <div class="swiper-slide card-project">
+            <div class="image-project">
+              <a href="/">
+              <img src="./imag/2580550_4ccf.jpg" alt="img-venda de carro">
+            </a>
             </div>
 
+            <span>site venda de carros eletros</span>
+
+            <p>este projeto simula a compra de carro eletros</p>
+
+            <div class="cta-project">
+              <a href="/">
+                código
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="/">
+                Site
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>    
+            </div>
           </div>
 
+
+
+
         </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        
+
+
+       
+      </div>
+
     </section>
+    <!--end projects-->
 
-
+<!--contacts-->
     <section id="contacts">
       <div class="contact-icon-content">
         <h2>Contato 📞</h2>
@@ -218,7 +246,9 @@
 
 
     </section>
+    <!--end contacts-->
 
+<!--footer-->
     <section id="footer">
       <div class="container-footer">
         <h2>Felipe S.Gonçalves © 2024</h2>
@@ -226,6 +256,9 @@
       </div>
 
     </section>
+<!--end footer-->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script src="scripts.js"></script>
 
