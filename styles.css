@@ -5,7 +5,7 @@
 * {
     
     margin: 0px;
-    padding: 0;
+    padding: 0px;
     box-sizing: border-box;
 }
 
@@ -166,11 +166,11 @@ body {
 
 
 .menu-hamburquer::after {
-    transition: all .2s ease-in-out;
+    transit}*/
+ion: all .2s ease-in-out;
     transform: rotate(45deg) translate(-7px, -5px);
 }
 
-}*/
 
 
 
