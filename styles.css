@@ -91,7 +91,7 @@ body {
     display: none;
 }
 
-
+/*
 @media (max-width: 560px) {
     .navbar {
         display: flex;
@@ -115,7 +115,7 @@ body {
 
         transition: .6s ease-out;
 
-    }
+    }*/
 
 
 
@@ -149,7 +149,7 @@ body {
 
     background: var(--color-white);
    }
-}
+
 
    /* ATIVO */
 
@@ -167,9 +167,6 @@ body {
 
 .menu-hamburquer::after {
     transit}*/
-ion: all .2s ease-in-out;
-    transform: rotate(45deg) translate(-7px, -5px);
-}
 
 
 
